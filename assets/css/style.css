@@ -1,0 +1,89 @@
+/* Estilos generales */
+:root {
+    --first-color: hsl(228, 85%, 63%);
+    --title-color: hsl(228, 18%, 16%);
+    --text-color: hsl(228, 8%, 56%);
+    --body-color: hsl(228, 100%, 99%);
+    --shadow-color: hsla(228, 80%, 4%, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--body-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+h2 {
+    color: var(--title-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    max-width: 800px;
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.form-section {
+    width: 100%;
+}
+
+h3 {
+    color: var(--title-color);
+    margin-bottom: 1rem;
+}
+
+label {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid var(--shadow-color);
+    border-radius: 4px;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: hsl(228, 85%, 53%);
+}
